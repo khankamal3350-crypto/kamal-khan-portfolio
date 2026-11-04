@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Kamal Khan Digital Solution | Digital Designer & Website Developer</title>
 <meta name="description" content="Kamal Khan Digital Solution - Professional Website Design, Development, Logo Design, and Digital Solutions in Karachi, Pakistan.">
 <link rel="icon" type="image/png" href="images/kamal-khan-logo-new.png">
@@ -12,20 +15,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 /* ============================================================
-   RESET & ROOT VARIABLES — BLUE & WHITE THEME
+   RESET & ROOT VARIABLES — CRIMSON RED & WHITE THEME
 ============================================================ */
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 :root {
-  /* Core Blue Palette */
-  --blue-primary:   #0B5ED7;
-  --blue-dark:      #063B8C;
-  --blue-darker:    #042B6B;
-  --blue-medium:    #1A6FE8;
-  --blue-light:     #EAF3FF;
-  --blue-lighter:   #F0F7FF;
-  --blue-accent:    #3B82F6;
-  --blue-soft:      #DBEAFE;
-  --blue-muted:     #93C5FD;
+  /* Core Palette (Crimson Red) */
+  --blue-primary:   #DC2626;
+  --blue-dark:      #7F1D1D;
+  --blue-darker:    #450A0A;
+  --blue-medium:    #EF4444;
+  --blue-light:     #FEF2F2;
+  --blue-lighter:   #FFF5F5;
+  --blue-accent:    #EF4444;
+  --blue-soft:      #FEE2E2;
+  --blue-muted:     #FCA5A5;
 
   /* Neutral Palette */
   --white:          #FFFFFF;
@@ -37,31 +40,31 @@
   --gray-400:       #8AAEC9;
   --gray-500:       #5E84A2;
   --gray-600:       #3D5F7F;
-  --text-main:      #172033;
+  --text-main:      #261414;
   --text-body:      #3A5068;
   --text-muted:     #6B8CAE;
   --text-light:     #94AEC6;
 
-  /* Footer (Dark Blue) */
-  --footer-bg:      #06244F;
-  --footer-mid:     #092D60;
+  /* Footer */
+  --footer-bg:      #260707;
+  --footer-mid:     #3B0D0D;
 
   /* Shadows */
-  --shadow-xs:  0 1px 4px rgba(11, 94, 215, 0.06);
-  --shadow-sm:  0 2px 12px rgba(11, 94, 215, 0.09);
-  --shadow-md:  0 8px 32px rgba(11, 94, 215, 0.13);
-  --shadow-lg:  0 20px 60px rgba(11, 94, 215, 0.16);
-  --shadow-xl:  0 32px 80px rgba(11, 94, 215, 0.2);
-  --shadow-card: 0 4px 24px rgba(11, 94, 215, 0.08);
+  --shadow-xs:  0 1px 4px rgba(220, 38, 38, 0.06);
+  --shadow-sm:  0 2px 12px rgba(220, 38, 38, 0.09);
+  --shadow-md:  0 8px 32px rgba(220, 38, 38, 0.13);
+  --shadow-lg:  0 20px 60px rgba(220, 38, 38, 0.16);
+  --shadow-xl:  0 32px 80px rgba(220, 38, 38, 0.2);
+  --shadow-card: 0 4px 24px rgba(220, 38, 38, 0.08);
 
   /* Border */
-  --border-light: #E2ECF9;
-  --border-blue:  rgba(11, 94, 215, 0.2);
+  --border-light: #FEE2E2;
+  --border-blue:  rgba(220, 38, 38, 0.2);
 
   /* Gradients */
-  --grad-blue:    linear-gradient(135deg, #0B5ED7 0%, #063B8C 100%);
-  --grad-blue-soft: linear-gradient(135deg, #EAF3FF 0%, #F5F8FC 100%);
-  --grad-blue-hero: linear-gradient(135deg, #0B5ED7 0%, #1A6FE8 50%, #063B8C 100%);
+  --grad-blue:    linear-gradient(135deg, #DC2626 0%, #7F1D1D 100%);
+  --grad-blue-soft: linear-gradient(135deg, #FEF2F2 0%, #FFF5F5 100%);
+  --grad-blue-hero: linear-gradient(135deg, #DC2626 0%, #EF4444 50%, #7F1D1D 100%);
 
   /* Radii */
   --r-sm:  8px;
@@ -5138,22 +5141,22 @@ body.cursor-active .cursor-ring {
           <div class="adm-section-title"><i class="fas fa-palette"></i> Custom Brand Colors (Live Updates)</div>
           <div class="color-pickers" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;">
             <div class="cp-item">
-              <input type="color" id="cfg_color_primary" value="#0B5ED7" onchange="onColorInput(this,'--blue-primary')">
+              <input type="color" id="cfg_color_primary" value="#DC2626" onchange="onColorInput(this,'--blue-primary')">
               <label>Primary Color</label>
-              <input type="text" id="cfg_color_primary_hex" value="#0B5ED7" class="adm-input-field" style="text-align:center;padding:6px;font-size:0.8rem;margin-bottom:0;" oninput="onHexInput(this,'cfg_color_primary','--blue-primary')">
+              <input type="text" id="cfg_color_primary_hex" value="#DC2626" class="adm-input-field" style="text-align:center;padding:6px;font-size:0.8rem;margin-bottom:0;" oninput="onHexInput(this,'cfg_color_primary','--blue-primary')">
             </div>
             <div class="cp-item">
-              <input type="color" id="cfg_color_dark" value="#063B8C" onchange="onColorInput(this,'--blue-dark')">
+              <input type="color" id="cfg_color_dark" value="#7F1D1D" onchange="onColorInput(this,'--blue-dark')">
               <label>Dark Primary</label>
-              <input type="text" id="cfg_color_dark_hex" value="#063B8C" class="adm-input-field" style="text-align:center;padding:6px;font-size:0.8rem;margin-bottom:0;" oninput="onHexInput(this,'cfg_color_dark','--blue-dark')">
+              <input type="text" id="cfg_color_dark_hex" value="#7F1D1D" class="adm-input-field" style="text-align:center;padding:6px;font-size:0.8rem;margin-bottom:0;" oninput="onHexInput(this,'cfg_color_dark','--blue-dark')">
             </div>
             <div class="cp-item">
-              <input type="color" id="cfg_color_accent" value="#3B82F6" onchange="onColorInput(this,'--blue-accent')">
+              <input type="color" id="cfg_color_accent" value="#EF4444" onchange="onColorInput(this,'--blue-accent')">
               <label>Accent Color</label>
-              <input type="text" id="cfg_color_accent_hex" value="#3B82F6" class="adm-input-field" style="text-align:center;padding:6px;font-size:0.8rem;margin-bottom:0;" oninput="onHexInput(this,'cfg_color_accent','--blue-accent')">
+              <input type="text" id="cfg_color_accent_hex" value="#EF4444" class="adm-input-field" style="text-align:center;padding:6px;font-size:0.8rem;margin-bottom:0;" oninput="onHexInput(this,'cfg_color_accent','--blue-accent')">
             </div>
             <div class="cp-item">
-              <input type="color" id="cfg_color_light" value="#EAF3FF" onchange="onColorInput(this,'--blue-light')">
+              <input type="color" id="cfg_color_light" value="#FEF2F2" onchange="onColorInput(this,'--blue-light')">
               <label>Light Tint / BG</label>
               <input type="text" id="cfg_color_light_hex" value="#EAF3FF" class="adm-input-field" style="text-align:center;padding:6px;font-size:0.8rem;margin-bottom:0;" oninput="onHexInput(this,'cfg_color_light','--blue-light')">
             </div>
@@ -5785,13 +5788,13 @@ function handleForm(e) {
    ADMIN PORTAL & CMS CONTROLLER (FULL ENGINE)
 ============================================================ */
 const defaultSiteConfig = {
-  // Colors
-  color_primary: "#0B5ED7",
-  color_dark: "#063B8C",
-  color_accent: "#3B82F6",
-  color_light: "#EAF3FF",
-  color_text: "#172033",
-  color_footer: "#06244F",
+  // Colors (Crimson Red matching user theme)
+  color_primary: "#DC2626",
+  color_dark: "#7F1D1D",
+  color_accent: "#EF4444",
+  color_light: "#FEF2F2",
+  color_text: "#261414",
+  color_footer: "#260707",
   font_heading: "'Playfair Display', serif",
   font_body: "'Inter', sans-serif",
 
